@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1236</width>
-    <height>859</height>
+    <width>1240</width>
+    <height>867</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -502,8 +502,8 @@
                  <rect>
                   <x>0</x>
                   <y>0</y>
-                  <width>590</width>
-                  <height>687</height>
+                  <width>594</width>
+                  <height>695</height>
                  </rect>
                 </property>
                 <layout class="QVBoxLayout" name="verticalLayout_12">
@@ -971,6 +971,11 @@
                       </property>
                       <item>
                        <property name="text">
+                        <string/>
+                       </property>
+                      </item>
+                      <item>
+                       <property name="text">
                         <string>Concluído</string>
                        </property>
                       </item>
@@ -1244,6 +1249,27 @@
                        <height>30</height>
                       </size>
                      </property>
+                     <property name="autoFillBackground">
+                      <bool>false</bool>
+                     </property>
+                     <property name="inputMethodHints">
+                      <set>Qt::InputMethodHint::ImhPreferNumbers</set>
+                     </property>
+                     <property name="wrapping">
+                      <bool>false</bool>
+                     </property>
+                     <property name="alignment">
+                      <set>Qt::AlignmentFlag::AlignCenter</set>
+                     </property>
+                     <property name="buttonSymbols">
+                      <enum>QAbstractSpinBox::ButtonSymbols::UpDownArrows</enum>
+                     </property>
+                     <property name="correctionMode">
+                      <enum>QAbstractSpinBox::CorrectionMode::CorrectToPreviousValue</enum>
+                     </property>
+                     <property name="showGroupSeparator" stdset="0">
+                      <bool>false</bool>
+                     </property>
                      <property name="dateTime">
                       <datetime>
                        <hour>21</hour>
@@ -1290,6 +1316,11 @@
                        <height>30</height>
                       </size>
                      </property>
+                     <item>
+                      <property name="text">
+                       <string>Não irá se repetir</string>
+                      </property>
+                     </item>
                      <item>
                       <property name="text">
                        <string>Diáriamente</string>

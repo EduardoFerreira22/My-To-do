@@ -45,5 +45,3 @@ def read_querys():
             parent=None
             )
 
-
-read_querys()

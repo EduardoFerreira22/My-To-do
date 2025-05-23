@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainlOegAX.ui'
+## Form generated from reading UI file 'mainRoijqW.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.2
 ##
@@ -15,17 +15,17 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCalendarWidget, QCheckBox, QComboBox,
-    QDateEdit, QFrame, QHBoxLayout, QLabel,
-    QMainWindow, QPushButton, QScrollArea, QSizePolicy,
-    QTextEdit, QVBoxLayout, QWidget)
+from PySide6.QtWidgets import (QAbstractSpinBox, QApplication, QCalendarWidget, QCheckBox,
+    QComboBox, QDateEdit, QFrame, QHBoxLayout,
+    QLabel, QMainWindow, QPushButton, QScrollArea,
+    QSizePolicy, QTextEdit, QVBoxLayout, QWidget)
 from icons import icons_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1236, 859)
+        MainWindow.resize(1240, 867)
         MainWindow.setStyleSheet(u"#btn_close_frmRigth {\n"
 "	border:none;\n"
 "    border-top-left-radius: 5px;\n"
@@ -254,7 +254,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 590, 687))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 594, 695))
         self.verticalLayout_12 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
         self.verticalLayout_list_tasks = QVBoxLayout()
@@ -449,6 +449,7 @@ class Ui_MainWindow(object):
         self.comboBox_status_task = QComboBox(self.frame_9)
         self.comboBox_status_task.addItem("")
         self.comboBox_status_task.addItem("")
+        self.comboBox_status_task.addItem("")
         self.comboBox_status_task.setObjectName(u"comboBox_status_task")
         self.comboBox_status_task.setMinimumSize(QSize(150, 30))
         self.comboBox_status_task.setMaximumSize(QSize(150, 30))
@@ -596,6 +597,13 @@ class Ui_MainWindow(object):
         self.date_selecionar_data_task.setObjectName(u"date_selecionar_data_task")
         self.date_selecionar_data_task.setMinimumSize(QSize(0, 30))
         self.date_selecionar_data_task.setMaximumSize(QSize(150, 30))
+        self.date_selecionar_data_task.setAutoFillBackground(False)
+        self.date_selecionar_data_task.setInputMethodHints(Qt.InputMethodHint.ImhPreferNumbers)
+        self.date_selecionar_data_task.setWrapping(False)
+        self.date_selecionar_data_task.setAlignment(Qt.AlignmentFlag.AlignCenter)
+        self.date_selecionar_data_task.setButtonSymbols(QAbstractSpinBox.ButtonSymbols.UpDownArrows)
+        self.date_selecionar_data_task.setCorrectionMode(QAbstractSpinBox.CorrectionMode.CorrectToPreviousValue)
+        self.date_selecionar_data_task.setProperty(u"showGroupSeparator", False)
         self.date_selecionar_data_task.setDateTime(QDateTime(QDate(1999, 12, 30), QTime(21, 0, 0)))
         self.date_selecionar_data_task.setCalendarPopup(True)
         self.date_selecionar_data_task.setTimeSpec(Qt.TimeSpec.LocalTime)
@@ -614,6 +622,7 @@ class Ui_MainWindow(object):
         self.verticalLayout_19.addWidget(self.label_7, 0, Qt.AlignmentFlag.AlignBottom)
 
         self.cbx_repetir_task = QComboBox(self.layoutWidget)
+        self.cbx_repetir_task.addItem("")
         self.cbx_repetir_task.addItem("")
         self.cbx_repetir_task.addItem("")
         self.cbx_repetir_task.addItem("")
@@ -781,8 +790,9 @@ class Ui_MainWindow(object):
         self.lb_titulo_data_frmRigth.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-weight:700;\">Criado em Ter, 20 de Maio</span></p></body></html>", None))
         self.btn_close_frmRigth.setText("")
         self.checkBox_feito.setText("")
-        self.comboBox_status_task.setItemText(0, QCoreApplication.translate("MainWindow", u"Conclu\u00eddo", None))
-        self.comboBox_status_task.setItemText(1, QCoreApplication.translate("MainWindow", u"Descartado", None))
+        self.comboBox_status_task.setItemText(0, "")
+        self.comboBox_status_task.setItemText(1, QCoreApplication.translate("MainWindow", u"Conclu\u00eddo", None))
+        self.comboBox_status_task.setItemText(2, QCoreApplication.translate("MainWindow", u"Descartado", None))
 
         self.comboBox_status_task.setCurrentText("")
         self.comboBox_status_task.setPlaceholderText(QCoreApplication.translate("MainWindow", u"Status", None))
@@ -793,10 +803,11 @@ class Ui_MainWindow(object):
         self.btn_lembrar_me.setText(QCoreApplication.translate("MainWindow", u"  Lembrar-me", None))
         self.label_6.setText(QCoreApplication.translate("MainWindow", u"Selecionar data", None))
         self.label_7.setText(QCoreApplication.translate("MainWindow", u"Repetir", None))
-        self.cbx_repetir_task.setItemText(0, QCoreApplication.translate("MainWindow", u"Di\u00e1riamente", None))
-        self.cbx_repetir_task.setItemText(1, QCoreApplication.translate("MainWindow", u"Semanalmente", None))
-        self.cbx_repetir_task.setItemText(2, QCoreApplication.translate("MainWindow", u"Mensalmente", None))
-        self.cbx_repetir_task.setItemText(3, QCoreApplication.translate("MainWindow", u"Anualmente", None))
+        self.cbx_repetir_task.setItemText(0, QCoreApplication.translate("MainWindow", u"N\u00e3o ir\u00e1 se repetir", None))
+        self.cbx_repetir_task.setItemText(1, QCoreApplication.translate("MainWindow", u"Di\u00e1riamente", None))
+        self.cbx_repetir_task.setItemText(2, QCoreApplication.translate("MainWindow", u"Semanalmente", None))
+        self.cbx_repetir_task.setItemText(3, QCoreApplication.translate("MainWindow", u"Mensalmente", None))
+        self.cbx_repetir_task.setItemText(4, QCoreApplication.translate("MainWindow", u"Anualmente", None))
 
         self.label_8.setText(QCoreApplication.translate("MainWindow", u"Adicionar anota\u00e7\u00e3o", None))
 #if QT_CONFIG(tooltip)

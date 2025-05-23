@@ -29,6 +29,24 @@
             "category": "Sa\u00c3\u00bade",
             "date": "2025-05-26",
             "completed": true
+        },
+        {
+            "text": "Nova Tarefa",
+            "category": "Urgente",
+            "date": "2025-05-22",
+            "completed": false
+        },
+        {
+            "text": "Nova Tarefa",
+            "category": "Urgente",
+            "date": "2025-05-23",
+            "completed": false
+        },
+        {
+            "text": "Nova Tarefa",
+            "category": "Urgente",
+            "date": "2025-05-23",
+            "completed": false
         }
     ]
 }

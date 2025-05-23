@@ -1,6 +1,6 @@
 import sqlite3
-from ..config import configuracoes as cfg
-from ..config.logs import LogManager
+from config import configuracoes as cfg
+from config.logs import LogManager
 
 logger = LogManager()
 
@@ -31,18 +31,20 @@ class DBConnect:
 
     def create_tables(self):
         try:
+            self.connect()
             query = cfg.read_querys()
             if isinstance(query, list):
                 query = "".join(query)
             
             self.cursor.executescript(query)
             self.conn.commit()
+            self.close_connect()
             logger.info('Tabelas do sistema criadas com sucesso.')
-            cfg.show_popup('sucesso', 'Tabelas Criadas', 'As tabelas foram criadas com sucesso.')
+            # cfg.show_popup('sucesso', 'Tabelas Criadas', 'As tabelas foram criadas com sucesso.')
             
         except Exception as e:
             logger.excecao(f"Erro ao criar as tabelas do sistema {e}")
-            cfg.show_popup('erro', 'Erro ao Criar Tabelas', f'{e}')
+            # cfg.show_popup('erro', 'Erro ao Criar Tabelas', f'{e}')
 
     def select_tasks(self):
         ...
