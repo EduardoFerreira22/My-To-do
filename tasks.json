@@ -1,0 +1,34 @@
+{
+    "tasks": [
+        {
+            "text": "Estudar Python para o projeto",
+            "category": "Estudos",
+            "date": "2025-05-22",
+            "completed": true
+        },
+        {
+            "text": "Reuni\u00c3\u00a3o com equipe de marketing",
+            "category": "Trabalho",
+            "date": "2025-05-23",
+            "completed": true
+        },
+        {
+            "text": "Comprar mantimentos",
+            "category": "Pessoal",
+            "date": "2025-05-24",
+            "completed": true
+        },
+        {
+            "text": "Enviar relat\u00c3\u00b3rio financeiro",
+            "category": "Urgente",
+            "date": "2025-05-25",
+            "completed": true
+        },
+        {
+            "text": "Agendar consulta m\u00c3\u00a9dica",
+            "category": "Sa\u00c3\u00bade",
+            "date": "2025-05-26",
+            "completed": true
+        }
+    ]
+}
