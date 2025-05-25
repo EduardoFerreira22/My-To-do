@@ -5,12 +5,13 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
     QFont, QFontDatabase, QGradient, QIcon,
     QImage, QKeySequence, QLinearGradient, QPainter,
     QPalette, QPixmap, QRadialGradient, QTransform)
-from PySide6.QtWidgets import (QApplication, QCalendarWidget, QCheckBox, QComboBox,
+from PySide6.QtWidgets import (QApplication, QColorDialog, QCalendarWidget, QCheckBox, QComboBox,
     QDateEdit, QFrame, QHBoxLayout, QLabel,
     QMainWindow, QPushButton, QScrollArea, QSizePolicy,
     QTextEdit, QVBoxLayout, QWidget)
 
 from ui.ui_main import Ui_MainWindow
+from ui.ui_categorias import Ui_CadastroCategorias
 from connections.connect import DBConnect
 from config.objects import *
 import json
@@ -19,7 +20,43 @@ import os
 path_db = "Data/dados.db"
 db = DBConnect(path=path_db)
 
-class PrincipalWindow(QMainWindow, Ui_MainWindow):
+
+
+class CadastroCategorias(QtWidgets.QWidget, Ui_CadastroCategorias):
+    def __init__(self):
+        super().__init__()
+        self.setupUi(self)  # Configura a UI
+        self.setWindowTitle("Cadastro de categoria")
+        # Configurar a janela para remover minimizar e maximizar
+        self.setWindowFlags(
+            Qt.Window |
+            Qt.WindowTitleHint |
+            Qt.WindowCloseButtonHint |
+            Qt.CustomizeWindowHint  # Personalizar botões da barra
+        )
+        self.frm_color_selected_categorias.setVisible(False)
+        # Conectar botão ao método que abre o seletor
+        self.btn_selecionar_cor.clicked.connect(self.abrir_seletor_cores)
+        self.btn_salvar_categoria.clicked.connect(self.create_categoria)
+    
+    def abrir_seletor_cores(self):
+        cor = QColorDialog.getColor()
+        if cor.isValid():
+            # Pega o código hexadecimal da cor
+            self.codigo_cor = cor.name()
+            self.frm_color_selected_categorias.setVisible(True)
+            self.frm_color_selected_categorias.setStyleSheet(f"background-color: {self.codigo_cor};")
+            # Se quiser, pode setar a cor no background do frame ou lineEdit
+
+    def create_categoria(self):
+        categoria = self.txt_window_categoria.text()
+        cor = self.codigo_cor
+        db.insert_categorias(categoria=categoria, cor=cor)
+        self.close()
+        
+
+
+class PrincipalWindow(QMainWindow, Ui_MainWindow, Ui_CadastroCategorias):
     def __init__(self):
         super(PrincipalWindow, self).__init__()
         self.setupUi(self)
@@ -53,6 +90,7 @@ class PrincipalWindow(QMainWindow, Ui_MainWindow):
         data = self.data_create_task()
         self.btn_add_task.clicked.connect(self.add_task_frm)
         self.btn_salvar_new_task.clicked.connect(lambda: print(data))
+        self.btn_addNew_categoria.clicked.connect(self.abrir_window_categorias)
 
     def add_task_frm(self):
         self.frm_principal_rigth_task.setVisible(True)
@@ -65,6 +103,8 @@ class PrincipalWindow(QMainWindow, Ui_MainWindow):
 
     def data_create_task(self):
         # Váriaveis para Armazenar os dados da nova task
+        check = self.checkBox_feito.isChecked()
+        status_task = self.comboBox_status_task.currentText()
         descricao = self.txt_descricao_task.toPlainText()
         prioridade = self.cbx_select_prioridades.currentText()
         categoria = self.cbx_select_categoria.currentText()
@@ -81,6 +121,8 @@ class PrincipalWindow(QMainWindow, Ui_MainWindow):
         repetir = mapa_repetir.get(repetir_texto, 0)# padrão: 0 = sem repetições
         #Dicionário que armazena o valor das variáveis par ser reutilizados em outras áreas do código.
         task_data = {
+            "check": check,
+            "status": status_task,
             "descricao": descricao,
             "prioridade": prioridade,
             "categoria": categoria,
@@ -92,6 +134,10 @@ class PrincipalWindow(QMainWindow, Ui_MainWindow):
         return task_data #Retorna o dicionário com os dados capturados.
 
     
+    def abrir_window_categorias(self):
+        self.cadastro_categorias = CadastroCategorias()
+        self.cadastro_categorias.show()
+
 
     def frame_task_list(self):
             """Popula a lista de tarefas com frames dinâmicos."""

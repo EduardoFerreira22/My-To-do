@@ -9,7 +9,7 @@ class LogManager:
         os.makedirs(pasta_logs, exist_ok=True)
 
         # Definir a data e hora para o nome dos arquivos
-        data_hora = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        data_hora = datetime.now().strftime("%Y-%m-%d")
 
         # Definir os caminhos dos arquivos de log
         info_log_dir = os.path.join(pasta_logs, 'logs_info_warning')

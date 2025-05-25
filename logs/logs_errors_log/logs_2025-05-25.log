@@ -1,0 +1,42 @@
+2025-05-25 01:52:55,153 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 59, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 01:57:10,967 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 59, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 01:59:50,953 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 62, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 02:01:01,670 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 63, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 02:06:00,805 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 63, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 02:07:51,491 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 62, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 02:10:13,752 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (2 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 62, in insert_categorias
+    self.cursor.executescript(query, (categoria, cor))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (2 given)

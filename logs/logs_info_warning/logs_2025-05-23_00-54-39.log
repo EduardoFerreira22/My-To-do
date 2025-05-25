@@ -1,3 +1,0 @@
-2025-05-23 00:54:39,813 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
-2025-05-23 00:54:39,843 - INFO - [close_connect] Conexão com o banco de dados encerrada.
-2025-05-23 00:54:39,844 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.

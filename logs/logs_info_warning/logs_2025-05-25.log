@@ -1,0 +1,130 @@
+2025-05-25 00:49:16,411 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 00:49:16,455 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 00:49:16,456 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:02:09,010 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:02:09,048 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:02:09,049 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:04:02,707 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:04:02,748 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:04:02,748 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:04:28,545 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:04:28,581 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:04:28,581 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:19:23,598 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:19:23,641 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:19:23,641 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:21:26,111 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:21:26,149 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:21:26,150 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:28:40,964 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:28:41,004 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:28:41,005 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:32:33,888 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:32:33,927 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:32:33,928 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:33:55,209 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:33:55,250 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:33:55,250 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:35:22,217 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:35:22,258 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:35:22,259 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:42:04,721 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:42:04,761 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:42:04,762 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:52:38,813 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:52:38,860 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:52:38,860 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:52:55,151 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:52:55,153 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 59, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 01:56:56,552 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:56:56,594 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:56:56,594 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:57:10,965 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:57:10,967 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 59, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 01:59:38,007 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:59:38,051 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 01:59:38,052 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 01:59:50,951 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 01:59:50,953 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 62, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 02:00:51,435 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:00:51,473 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:00:51,474 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:01:01,667 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:01:01,670 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 63, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 02:05:50,934 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:05:50,971 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:05:50,972 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:06:00,800 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:06:00,805 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 63, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 02:07:34,173 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:07:34,219 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:07:34,220 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:07:51,488 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:07:51,491 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (3 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 62, in insert_categorias
+    self.cursor.executescript(query, categoria, cor)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (3 given)
+2025-05-25 02:09:59,297 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:09:59,331 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:09:59,332 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:10:13,750 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:10:13,752 - ERROR - [insert_categorias] Erro ao criar uma nova categoria Cursor.executescript() takes exactly one argument (2 given)
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 62, in insert_categorias
+    self.cursor.executescript(query, (categoria, cor))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Cursor.executescript() takes exactly one argument (2 given)
+2025-05-25 02:11:06,731 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:11:06,766 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:11:06,767 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:11:17,674 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:11:17,683 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:11:17,684 - INFO - [insert_categorias] CategoriaFaculdade criada com sucesso.
+2025-05-25 02:15:58,521 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:15:58,564 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:15:58,567 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:16:12,368 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:16:12,388 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:16:12,391 - INFO - [insert_categorias] CategoriaTeste 1 criada com sucesso.
+2025-05-25 02:16:31,712 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:16:31,749 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:16:31,749 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:19:57,162 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:19:57,196 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:19:57,197 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:20:06,986 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:20:07,003 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:20:07,005 - INFO - [insert_categorias] Categoriateste 2 criada com sucesso.
+2025-05-25 02:23:12,065 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:23:12,097 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:23:12,098 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.
+2025-05-25 02:23:22,804 - INFO - [connect] Conexão com o banco Data/dados.db estabelecida com sucesso.
+2025-05-25 02:23:22,838 - INFO - [close_connect] Conexão com o banco de dados encerrada.
+2025-05-25 02:23:22,838 - INFO - [create_tables] Tabelas do sistema criadas com sucesso.

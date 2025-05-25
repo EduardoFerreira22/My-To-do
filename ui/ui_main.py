@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'mainRoijqW.ui'
+## Form generated from reading UI file 'mainFigTZB.ui'
 ##
 ## Created by: Qt User Interface Compiler version 6.8.2
 ##
@@ -18,14 +18,15 @@ from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
 from PySide6.QtWidgets import (QAbstractSpinBox, QApplication, QCalendarWidget, QCheckBox,
     QComboBox, QDateEdit, QFrame, QHBoxLayout,
     QLabel, QMainWindow, QPushButton, QScrollArea,
-    QSizePolicy, QTextEdit, QVBoxLayout, QWidget)
+    QSizePolicy, QSpacerItem, QTextEdit, QVBoxLayout,
+    QWidget)
 from icons import icons_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         if not MainWindow.objectName():
             MainWindow.setObjectName(u"MainWindow")
-        MainWindow.resize(1240, 867)
+        MainWindow.resize(1245, 859)
         MainWindow.setStyleSheet(u"#btn_close_frmRigth {\n"
 "	border:none;\n"
 "    border-top-left-radius: 5px;\n"
@@ -44,7 +45,20 @@ class Ui_MainWindow(object):
 "    border-bottom-left-radius: 5px;\n"
 "    border-bottom-right-radius: 5px;\n"
 "\n"
-"}")
+"}\n"
+"\n"
+"#frm_intern_time_pomodoro {\n"
+"    min-width: 200px;\n"
+"    max-width: 200px;\n"
+"    min-height: 200px;\n"
+"    max-height: 200px;\n"
+"    border-radius: 100px; /* Ou 50% */\n"
+"    /*background-color: #3498db;*/\n"
+"    border: 1px solid #7d8085;\n"
+"}\n"
+"\n"
+"\n"
+"")
         self.centralwidget = QWidget(MainWindow)
         self.centralwidget.setObjectName(u"centralwidget")
         self.centralwidget.setStyleSheet(u"")
@@ -57,6 +71,7 @@ class Ui_MainWindow(object):
         self.frm_principal_left.setFrameShape(QFrame.Shape.StyledPanel)
         self.frm_principal_left.setFrameShadow(QFrame.Shadow.Raised)
         self.verticalLayout_2 = QVBoxLayout(self.frm_principal_left)
+        self.verticalLayout_2.setSpacing(2)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
         self.frame_5 = QFrame(self.frm_principal_left)
         self.frame_5.setObjectName(u"frame_5")
@@ -166,10 +181,169 @@ class Ui_MainWindow(object):
 
         self.verticalLayout_2.addWidget(self.frm_principal_categorias)
 
+        self.frm_top_buttons_pomodoro = QFrame(self.frm_principal_left)
+        self.frm_top_buttons_pomodoro.setObjectName(u"frm_top_buttons_pomodoro")
+        self.frm_top_buttons_pomodoro.setMinimumSize(QSize(0, 40))
+        self.frm_top_buttons_pomodoro.setMaximumSize(QSize(16777215, 40))
+        self.frm_top_buttons_pomodoro.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frm_top_buttons_pomodoro.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_16 = QHBoxLayout(self.frm_top_buttons_pomodoro)
+        self.horizontalLayout_16.setSpacing(0)
+        self.horizontalLayout_16.setObjectName(u"horizontalLayout_16")
+        self.horizontalLayout_16.setContentsMargins(-1, 0, 5, 0)
+        self.horizontalLayout_15 = QHBoxLayout()
+        self.horizontalLayout_15.setObjectName(u"horizontalLayout_15")
+        self.label_5 = QLabel(self.frm_top_buttons_pomodoro)
+        self.label_5.setObjectName(u"label_5")
+
+        self.horizontalLayout_15.addWidget(self.label_5)
+
+        self.horizontalSpacer = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_15.addItem(self.horizontalSpacer)
+
+        self.btn_expand_pomodoro = QPushButton(self.frm_top_buttons_pomodoro)
+        self.btn_expand_pomodoro.setObjectName(u"btn_expand_pomodoro")
+        self.btn_expand_pomodoro.setMinimumSize(QSize(35, 35))
+        self.btn_expand_pomodoro.setMaximumSize(QSize(35, 35))
+        icon1 = QIcon()
+        icon1.addFile(u":/imagens/expand.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_expand_pomodoro.setIcon(icon1)
+        self.btn_expand_pomodoro.setIconSize(QSize(20, 20))
+        self.btn_expand_pomodoro.setCheckable(True)
+        self.btn_expand_pomodoro.setAutoExclusive(True)
+        self.btn_expand_pomodoro.setAutoDefault(True)
+        self.btn_expand_pomodoro.setFlat(True)
+
+        self.horizontalLayout_15.addWidget(self.btn_expand_pomodoro)
+
+        self.btn_fluter_pomodoro = QPushButton(self.frm_top_buttons_pomodoro)
+        self.btn_fluter_pomodoro.setObjectName(u"btn_fluter_pomodoro")
+        self.btn_fluter_pomodoro.setMinimumSize(QSize(35, 35))
+        self.btn_fluter_pomodoro.setMaximumSize(QSize(35, 35))
+        icon2 = QIcon()
+        icon2.addFile(u":/imagens/full-size.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_fluter_pomodoro.setIcon(icon2)
+        self.btn_fluter_pomodoro.setIconSize(QSize(20, 20))
+        self.btn_fluter_pomodoro.setCheckable(True)
+        self.btn_fluter_pomodoro.setAutoExclusive(True)
+        self.btn_fluter_pomodoro.setAutoDefault(True)
+        self.btn_fluter_pomodoro.setFlat(True)
+
+        self.horizontalLayout_15.addWidget(self.btn_fluter_pomodoro)
+
+
+        self.horizontalLayout_16.addLayout(self.horizontalLayout_15)
+
+
+        self.verticalLayout_2.addWidget(self.frm_top_buttons_pomodoro)
+
         self.frm_button_info_left = QFrame(self.frm_principal_left)
         self.frm_button_info_left.setObjectName(u"frm_button_info_left")
-        self.frm_button_info_left.setFrameShape(QFrame.Shape.NoFrame)
+        self.frm_button_info_left.setMinimumSize(QSize(0, 270))
+        self.frm_button_info_left.setMaximumSize(QSize(16777215, 270))
+        self.frm_button_info_left.setFrameShape(QFrame.Shape.StyledPanel)
         self.frm_button_info_left.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_23 = QVBoxLayout(self.frm_button_info_left)
+        self.verticalLayout_23.setSpacing(0)
+        self.verticalLayout_23.setObjectName(u"verticalLayout_23")
+        self.verticalLayout_23.setContentsMargins(0, 0, 0, 0)
+        self.frm_extern_time_pomodoro = QFrame(self.frm_button_info_left)
+        self.frm_extern_time_pomodoro.setObjectName(u"frm_extern_time_pomodoro")
+        self.frm_extern_time_pomodoro.setMinimumSize(QSize(0, 270))
+        self.frm_extern_time_pomodoro.setMaximumSize(QSize(16777215, 270))
+        self.frm_extern_time_pomodoro.setFrameShape(QFrame.Shape.StyledPanel)
+        self.frm_extern_time_pomodoro.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_28 = QVBoxLayout(self.frm_extern_time_pomodoro)
+        self.verticalLayout_28.setSpacing(0)
+        self.verticalLayout_28.setObjectName(u"verticalLayout_28")
+        self.verticalLayout_28.setContentsMargins(0, 0, 0, 0)
+        self.frm_intern_time_pomodoro = QFrame(self.frm_extern_time_pomodoro)
+        self.frm_intern_time_pomodoro.setObjectName(u"frm_intern_time_pomodoro")
+        self.frm_intern_time_pomodoro.setMinimumSize(QSize(202, 202))
+        self.frm_intern_time_pomodoro.setMaximumSize(QSize(202, 202))
+        self.frm_intern_time_pomodoro.setFrameShape(QFrame.Shape.NoFrame)
+        self.frm_intern_time_pomodoro.setFrameShadow(QFrame.Shadow.Raised)
+        self.verticalLayout_30 = QVBoxLayout(self.frm_intern_time_pomodoro)
+        self.verticalLayout_30.setObjectName(u"verticalLayout_30")
+        self.verticalLayout_29 = QVBoxLayout()
+        self.verticalLayout_29.setSpacing(2)
+        self.verticalLayout_29.setObjectName(u"verticalLayout_29")
+        self.lb_time_pomodoro_fixe = QLabel(self.frm_intern_time_pomodoro)
+        self.lb_time_pomodoro_fixe.setObjectName(u"lb_time_pomodoro_fixe")
+        self.lb_time_pomodoro_fixe.setMinimumSize(QSize(120, 0))
+        self.lb_time_pomodoro_fixe.setMaximumSize(QSize(120, 16777215))
+
+        self.verticalLayout_29.addWidget(self.lb_time_pomodoro_fixe, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignBottom)
+
+        self.horizontalLayout_14 = QHBoxLayout()
+        self.horizontalLayout_14.setSpacing(0)
+        self.horizontalLayout_14.setObjectName(u"horizontalLayout_14")
+        self.horizontalSpacer_2 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_14.addItem(self.horizontalSpacer_2)
+
+        self.btn_reset_pomodoro = QPushButton(self.frm_intern_time_pomodoro)
+        self.btn_reset_pomodoro.setObjectName(u"btn_reset_pomodoro")
+        self.btn_reset_pomodoro.setMinimumSize(QSize(35, 35))
+        self.btn_reset_pomodoro.setMaximumSize(QSize(35, 35))
+        icon3 = QIcon()
+        icon3.addFile(u":/imagens/refresh (1).png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_reset_pomodoro.setIcon(icon3)
+        self.btn_reset_pomodoro.setIconSize(QSize(20, 20))
+        self.btn_reset_pomodoro.setCheckable(True)
+        self.btn_reset_pomodoro.setAutoExclusive(True)
+        self.btn_reset_pomodoro.setAutoDefault(True)
+        self.btn_reset_pomodoro.setFlat(True)
+
+        self.horizontalLayout_14.addWidget(self.btn_reset_pomodoro, 0, Qt.AlignmentFlag.AlignRight|Qt.AlignmentFlag.AlignTop)
+
+        self.btn_pause_pomodoro = QPushButton(self.frm_intern_time_pomodoro)
+        self.btn_pause_pomodoro.setObjectName(u"btn_pause_pomodoro")
+        self.btn_pause_pomodoro.setMinimumSize(QSize(35, 35))
+        self.btn_pause_pomodoro.setMaximumSize(QSize(35, 35))
+        icon4 = QIcon()
+        icon4.addFile(u":/imagens/pause.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_pause_pomodoro.setIcon(icon4)
+        self.btn_pause_pomodoro.setIconSize(QSize(20, 20))
+        self.btn_pause_pomodoro.setCheckable(True)
+        self.btn_pause_pomodoro.setAutoExclusive(True)
+        self.btn_pause_pomodoro.setAutoDefault(True)
+        self.btn_pause_pomodoro.setFlat(True)
+
+        self.horizontalLayout_14.addWidget(self.btn_pause_pomodoro, 0, Qt.AlignmentFlag.AlignHCenter|Qt.AlignmentFlag.AlignTop)
+
+        self.btn_play_pomodoro = QPushButton(self.frm_intern_time_pomodoro)
+        self.btn_play_pomodoro.setObjectName(u"btn_play_pomodoro")
+        self.btn_play_pomodoro.setMinimumSize(QSize(35, 35))
+        self.btn_play_pomodoro.setMaximumSize(QSize(35, 35))
+        icon5 = QIcon()
+        icon5.addFile(u":/imagens/play-button.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_play_pomodoro.setIcon(icon5)
+        self.btn_play_pomodoro.setIconSize(QSize(20, 20))
+        self.btn_play_pomodoro.setCheckable(True)
+        self.btn_play_pomodoro.setAutoExclusive(True)
+        self.btn_play_pomodoro.setAutoDefault(True)
+        self.btn_play_pomodoro.setFlat(True)
+
+        self.horizontalLayout_14.addWidget(self.btn_play_pomodoro, 0, Qt.AlignmentFlag.AlignLeft|Qt.AlignmentFlag.AlignTop)
+
+        self.horizontalSpacer_3 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_14.addItem(self.horizontalSpacer_3)
+
+
+        self.verticalLayout_29.addLayout(self.horizontalLayout_14)
+
+
+        self.verticalLayout_30.addLayout(self.verticalLayout_29)
+
+
+        self.verticalLayout_28.addWidget(self.frm_intern_time_pomodoro, 0, Qt.AlignmentFlag.AlignHCenter)
+
+
+        self.verticalLayout_23.addWidget(self.frm_extern_time_pomodoro)
+
 
         self.verticalLayout_2.addWidget(self.frm_button_info_left)
 
@@ -234,9 +408,9 @@ class Ui_MainWindow(object):
         self.btn_add_task.setObjectName(u"btn_add_task")
         self.btn_add_task.setMinimumSize(QSize(40, 40))
         self.btn_add_task.setMaximumSize(QSize(40, 40))
-        icon1 = QIcon()
-        icon1.addFile(u":/imagens/add.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btn_add_task.setIcon(icon1)
+        icon6 = QIcon()
+        icon6.addFile(u":/imagens/add.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_add_task.setIcon(icon6)
         self.btn_add_task.setIconSize(QSize(20, 20))
         self.btn_add_task.setCheckable(True)
         self.btn_add_task.setChecked(False)
@@ -254,7 +428,7 @@ class Ui_MainWindow(object):
         self.scrollArea.setWidgetResizable(True)
         self.scrollAreaWidgetContents = QWidget()
         self.scrollAreaWidgetContents.setObjectName(u"scrollAreaWidgetContents")
-        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 594, 695))
+        self.scrollAreaWidgetContents.setGeometry(QRect(0, 0, 599, 687))
         self.verticalLayout_12 = QVBoxLayout(self.scrollAreaWidgetContents)
         self.verticalLayout_12.setObjectName(u"verticalLayout_12")
         self.verticalLayout_list_tasks = QVBoxLayout()
@@ -355,9 +529,9 @@ class Ui_MainWindow(object):
         self.pushButton.setObjectName(u"pushButton")
         self.pushButton.setMinimumSize(QSize(30, 30))
         self.pushButton.setMaximumSize(QSize(30, 30))
-        icon2 = QIcon()
-        icon2.addFile(u":/imagens/share.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.pushButton.setIcon(icon2)
+        icon7 = QIcon()
+        icon7.addFile(u":/imagens/share.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.pushButton.setIcon(icon7)
         self.pushButton.setCheckable(True)
         self.pushButton.setAutoExclusive(True)
         self.pushButton.setAutoDefault(True)
@@ -413,9 +587,9 @@ class Ui_MainWindow(object):
         self.btn_close_frmRigth.setMinimumSize(QSize(30, 30))
         self.btn_close_frmRigth.setMaximumSize(QSize(30, 30))
         self.btn_close_frmRigth.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        icon3 = QIcon()
-        icon3.addFile(u":/imagens/close.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btn_close_frmRigth.setIcon(icon3)
+        icon8 = QIcon()
+        icon8.addFile(u":/imagens/close.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_close_frmRigth.setIcon(icon8)
 
         self.horizontalLayout_13.addWidget(self.btn_close_frmRigth, 0, Qt.AlignmentFlag.AlignRight)
 
@@ -554,9 +728,9 @@ class Ui_MainWindow(object):
         self.btn_adicionar_meu_dia.setMinimumSize(QSize(260, 35))
         self.btn_adicionar_meu_dia.setMaximumSize(QSize(260, 35))
         self.btn_adicionar_meu_dia.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        icon4 = QIcon()
-        icon4.addFile(u":/imagens/sunny-day.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btn_adicionar_meu_dia.setIcon(icon4)
+        icon9 = QIcon()
+        icon9.addFile(u":/imagens/sunny-day.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_adicionar_meu_dia.setIcon(icon9)
         self.btn_adicionar_meu_dia.setIconSize(QSize(25, 25))
         self.btn_adicionar_meu_dia.setCheckable(True)
         self.btn_adicionar_meu_dia.setAutoExclusive(True)
@@ -571,9 +745,9 @@ class Ui_MainWindow(object):
         self.btn_lembrar_me.setMaximumSize(QSize(260, 35))
         self.btn_lembrar_me.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
         self.btn_lembrar_me.setMouseTracking(False)
-        icon5 = QIcon()
-        icon5.addFile(u":/imagens/alarm-clock.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btn_lembrar_me.setIcon(icon5)
+        icon10 = QIcon()
+        icon10.addFile(u":/imagens/alarm-clock.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_lembrar_me.setIcon(icon10)
         self.btn_lembrar_me.setIconSize(QSize(25, 25))
         self.btn_lembrar_me.setCheckable(True)
         self.btn_lembrar_me.setAutoExclusive(True)
@@ -680,9 +854,9 @@ class Ui_MainWindow(object):
         self.btn_salvar_new_task.setMinimumSize(QSize(0, 35))
         self.btn_salvar_new_task.setMaximumSize(QSize(16777215, 35))
         self.btn_salvar_new_task.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        icon6 = QIcon()
-        icon6.addFile(u":/imagens/floppy-disk.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btn_salvar_new_task.setIcon(icon6)
+        icon11 = QIcon()
+        icon11.addFile(u":/imagens/floppy-disk.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_salvar_new_task.setIcon(icon11)
         self.btn_salvar_new_task.setIconSize(QSize(20, 20))
         self.btn_salvar_new_task.setCheckable(True)
         self.btn_salvar_new_task.setChecked(False)
@@ -698,7 +872,7 @@ class Ui_MainWindow(object):
         self.btn_atualizar_task.setMinimumSize(QSize(0, 35))
         self.btn_atualizar_task.setMaximumSize(QSize(16777215, 35))
         self.btn_atualizar_task.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        self.btn_atualizar_task.setIcon(icon6)
+        self.btn_atualizar_task.setIcon(icon11)
         self.btn_atualizar_task.setIconSize(QSize(20, 20))
         self.btn_atualizar_task.setCheckable(True)
         self.btn_atualizar_task.setChecked(False)
@@ -714,9 +888,9 @@ class Ui_MainWindow(object):
         self.btn_excluir_task.setMinimumSize(QSize(0, 35))
         self.btn_excluir_task.setMaximumSize(QSize(16777215, 35))
         self.btn_excluir_task.setCursor(QCursor(Qt.CursorShape.PointingHandCursor))
-        icon7 = QIcon()
-        icon7.addFile(u":/imagens/trash.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
-        self.btn_excluir_task.setIcon(icon7)
+        icon12 = QIcon()
+        icon12.addFile(u":/imagens/trash.png", QSize(), QIcon.Mode.Normal, QIcon.State.Off)
+        self.btn_excluir_task.setIcon(icon12)
         self.btn_excluir_task.setIconSize(QSize(20, 20))
         self.btn_excluir_task.setCheckable(True)
         self.btn_excluir_task.setChecked(False)
@@ -748,6 +922,49 @@ class Ui_MainWindow(object):
         self.frm_info_system.setMaximumSize(QSize(16777215, 40))
         self.frm_info_system.setFrameShape(QFrame.Shape.StyledPanel)
         self.frm_info_system.setFrameShadow(QFrame.Shadow.Raised)
+        self.horizontalLayout_17 = QHBoxLayout(self.frm_info_system)
+        self.horizontalLayout_17.setSpacing(5)
+        self.horizontalLayout_17.setObjectName(u"horizontalLayout_17")
+        self.horizontalLayout_17.setContentsMargins(-1, 0, -1, 0)
+        self.lb_botton_outputs = QLabel(self.frm_info_system)
+        self.lb_botton_outputs.setObjectName(u"lb_botton_outputs")
+        self.lb_botton_outputs.setMinimumSize(QSize(600, 0))
+        self.lb_botton_outputs.setMaximumSize(QSize(600, 16777215))
+
+        self.horizontalLayout_17.addWidget(self.lb_botton_outputs)
+
+        self.horizontalSpacer_4 = QSpacerItem(40, 20, QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Minimum)
+
+        self.horizontalLayout_17.addItem(self.horizontalSpacer_4)
+
+        self.line_2 = QFrame(self.frm_info_system)
+        self.line_2.setObjectName(u"line_2")
+        self.line_2.setFrameShape(QFrame.Shape.VLine)
+        self.line_2.setFrameShadow(QFrame.Shadow.Sunken)
+
+        self.horizontalLayout_17.addWidget(self.line_2)
+
+        self.lb_botton_copyrigth = QLabel(self.frm_info_system)
+        self.lb_botton_copyrigth.setObjectName(u"lb_botton_copyrigth")
+        self.lb_botton_copyrigth.setMinimumSize(QSize(210, 0))
+        self.lb_botton_copyrigth.setMaximumSize(QSize(210, 16777215))
+
+        self.horizontalLayout_17.addWidget(self.lb_botton_copyrigth, 0, Qt.AlignmentFlag.AlignRight)
+
+        self.line_3 = QFrame(self.frm_info_system)
+        self.line_3.setObjectName(u"line_3")
+        self.line_3.setFrameShape(QFrame.Shape.VLine)
+        self.line_3.setFrameShadow(QFrame.Shadow.Sunken)
+
+        self.horizontalLayout_17.addWidget(self.line_3, 0, Qt.AlignmentFlag.AlignRight)
+
+        self.lb_versao_system = QLabel(self.frm_info_system)
+        self.lb_versao_system.setObjectName(u"lb_versao_system")
+        self.lb_versao_system.setMinimumSize(QSize(60, 0))
+        self.lb_versao_system.setMaximumSize(QSize(60, 16777215))
+
+        self.horizontalLayout_17.addWidget(self.lb_versao_system)
+
 
         self.verticalLayout.addWidget(self.frm_info_system)
 
@@ -776,6 +993,13 @@ class Ui_MainWindow(object):
         self.btn_addNew_categoria.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#00007f;\">Nova Categoria</span></p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
         self.btn_addNew_categoria.setText("")
+        self.label_5.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:12pt; font-weight:700;\">Pomodoro</span></p></body></html>", None))
+        self.btn_expand_pomodoro.setText("")
+        self.btn_fluter_pomodoro.setText("")
+        self.lb_time_pomodoro_fixe.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:28pt; font-weight:700;\">25:00</span></p></body></html>", None))
+        self.btn_reset_pomodoro.setText("")
+        self.btn_pause_pomodoro.setText("")
+        self.btn_play_pomodoro.setText("")
         self.lb_titulo_superior_categoria.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" font-size:16pt; font-weight:700;\">Urgente</span></p></body></html>", None))
         self.lb_data_titulo_superior.setText(QCoreApplication.translate("MainWindow", u"20/05/2025", None))
 #if QT_CONFIG(tooltip)
@@ -822,5 +1046,8 @@ class Ui_MainWindow(object):
         self.btn_excluir_task.setToolTip(QCoreApplication.translate("MainWindow", u"<html><head/><body><p><span style=\" color:#00007f;\">Excluir tarefa</span></p></body></html>", None))
 #endif // QT_CONFIG(tooltip)
         self.btn_excluir_task.setText("")
+        self.lb_botton_outputs.setText(QCoreApplication.translate("MainWindow", u"TextLabel", None))
+        self.lb_botton_copyrigth.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:7pt; font-weight:700;\">Copyright, 2025 - 2030, Eduardo Ferreira</span></p></body></html>", None))
+        self.lb_versao_system.setText(QCoreApplication.translate("MainWindow", u"<html><head/><body><p align=\"center\"><span style=\" font-size:7pt; font-weight:700;\">v0.0.1</span></p></body></html>", None))
     # retranslateUi
 

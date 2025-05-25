@@ -1,5 +1,12 @@
 <RCC>
   <qresource prefix="imagens">
+    <file>dropper.png</file>
+    <file>expand.png</file>
+    <file>full-size.png</file>
+    <file>pause.png</file>
+    <file>play-button.png</file>
+    <file>refresh (1).png</file>
+    <file>reduce screen.png</file>
     <file>close.png</file>
     <file>share.png</file>
     <file>bookmark.png</file>

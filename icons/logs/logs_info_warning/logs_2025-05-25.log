@@ -1,0 +1,29 @@
+2025-05-25 01:20:46,733 - ERROR - [connect] Erro ao conectar ao banco de dados: unable to open database file
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 15, in connect
+    self.conn = sqlite3.connect(self.path)
+                ~~~~~~~~~~~~~~~^^^^^^^^^^^
+sqlite3.OperationalError: unable to open database file
+2025-05-25 01:20:52,259 - ERROR - [create_tables] Erro ao criar as tabelas do sistema show_popup() got an unexpected keyword argument 'parent'
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\config\configuracoes.py", line 36, in read_querys
+    with open(path, "r", encoding='utf-8') as file:
+         ~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'Data/data.txt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\connections\connect.py", line 35, in create_tables
+    query = cfg.read_querys()
+  File "c:\Projetos\PROJETOS PYTHON\Gerenciador de Tarefas\config\configuracoes.py", line 41, in read_querys
+    show_popup(
+    ~~~~~~~~~~^
+        tipo='erro',
+        ^^^^^^^^^^^^
+    ...<2 lines>...
+        parent=None
+        ^^^^^^^^^^^
+        )
+        ^
+TypeError: show_popup() got an unexpected keyword argument 'parent'
